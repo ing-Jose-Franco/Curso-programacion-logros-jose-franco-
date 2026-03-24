@@ -5,3 +5,4 @@ altura= float(input("dame la altura del rectangulo:"))
 area= base * altura
 
 print(f"el area del rectangulo es {area}")
+print("problema resuelto!")
