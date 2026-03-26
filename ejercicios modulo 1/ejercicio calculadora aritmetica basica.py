@@ -3,7 +3,7 @@ print("\nCalculadora aritmetica basica\n")
 num1=float(input("Elige el primer numero para la operacion: "))
 num2=float(input("Elige el segundo numero para la operacion: "))
 
-operacion=(input("\n¿QUE OPERACION DESEAS REALIZAR?\n\n SUMA\n RESTA\n MULTIPLICACION\n DIVISION\n\n")).lower
+operacion=(input("\n¿QUE OPERACION DESEAS REALIZAR?\n\n SUMA\n RESTA\n MULTIPLICACION\n DIVISION\n\n")).lower()
 
 if operacion == "suma":
     sum= round((num1 + num2), 2)
@@ -24,4 +24,4 @@ elif operacion == "division":
     else:
         print("No se puede dividir por 0")
 else:
-    print("ERROR")
+     print("ERROR")
