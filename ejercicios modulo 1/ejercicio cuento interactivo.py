@@ -4,15 +4,15 @@ def juego_aventura():
     print("\nTal parece que la rejilla que te encierra se encuentra debil y oxidada, tambien hay parece que hay un agujero en la esquina de tu celda que conecta\nhacia abajo, pero mientras escuchas que alguien se acerca desde el techo a la ventana.")
     
     # NIVEL 1: Tres opciones (Mínimo 3 opciones solicitado)
-    eleccion1 = input("¿Qué decides hacer? [GOLPEAR LA REJILLA], [ESPERAR] o [ESCAPAR POR EL AGUJERO]: ").lower().strip()
+    eleccion1 = input("\n¿Qué decides hacer? [GOLPEAR LA REJILLA], [ESPERAR] o [ESCAPAR POR EL AGUJERO]: ").lower().strip()
 
     if eleccion1 == "golpear la rejilla":
-        print("\nGolpeas la rejilla con los vestijios de fuerza que todavia te quedan, ¡FUNCIONA! la reja a caido y eres libre, huyes rapidamente pero")
+        print("\nGolpeas la rejilla con los vestijios de fuerza que todavia te quedan, ¡FUNCIONA! la reja a caido y eres libre, huyes rapidamente pero hay dos caminos,\na tu derecha escuchaste pisadas cercanas y sonidos de sollozos, a tu izquierda escuchaste un rugido al final del camino")
         # NIVEL 2
-        eleccion2 = input("El mapa muestra una ruta al hangar. ¿Prefieres ir por los [CONDUCTOS] o por el [PASILLO PRINCIPAL]? ").lower().strip()
+        eleccion2 = input("\n¿Prefieres ir por la [DERECHA] o por la [IZQUIERDA]? ").lower().strip()
         
-        if eleccion2 == "conductos":
-            print("\nEntras en los estrechos tubos de ventilación. Escuchas algo que se arrastra detrás de ti.")
+        if eleccion2 == "derecha":
+            print("\nCaminas ")
             # NIVEL 3: Tres opciones
             eleccion3 = input("El camino se divide. ¿Hacia dónde vas? [IZQUIERDA], [DERECHA] o [ARRIBA]: ").lower().strip()
             
@@ -108,6 +108,6 @@ def juego_aventura():
         print("\¡HAS MUERTO! fuiste devorado en la profundidades del recinto")
         
     else:
-        print("\nOpción no válida. El pánico te paraliza y la base explota.")
+        print("\nOpción no válida.")
 
 juego_aventura()

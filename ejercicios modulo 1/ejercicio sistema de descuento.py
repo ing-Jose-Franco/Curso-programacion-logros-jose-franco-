@@ -1,7 +1,7 @@
 print("Sistema de descuentos")
 harina= 425.35
 descuento= 15
-cantidad= float(input("La harina esta a 425.35bs, cuantas deseas comprar?: "))
+cantidad= int(input("La harina esta a 425.35bs, cuantas deseas comprar?: "))
 
 resultado= round((cantidad * harina), 2)
 
