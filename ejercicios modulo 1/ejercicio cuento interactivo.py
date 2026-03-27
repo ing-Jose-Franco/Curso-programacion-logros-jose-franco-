@@ -87,7 +87,7 @@ elif eleccion1 == "esperar":
                 print("\nLlegan a una sala gigantesca con una puerta al final.\n\nOscar: Esa es la puerta para salir de aqui, yo tengo la llave pero antes de llegar a esa puerta hay que enfrentarnos a eso.\n\nTu: ¿A que? \n\n ¡PUM! miras a enfrente y vez a una bestia con forma de demonio y un mazo gigante en sus manos\n\nOscar: Esa cosa...El es el Carcelero.")
                 eleccion4 = input("\n¿Que haces? [ENCONTRAR ARMA] o [SEGUIR A OSCAR]").lower().strip()
                 if eleccion4 == "encontrar arma":
-                    print("\nEncuentras una [ESPADA CORTA] entre los cadaveres que habian en la sala, Oscar se lanza encontra de la bestia")
+                    print("\nEncuentras una [ESPADA CORTA] entre los cadaveres que habian en la sala, Oscar se lanza en contra de la bestia")
                     
                     eleccion5 = input("¿Que haces? [SEGUIR A OSCAR] o [SEGUIR BUSCANDO]").lower().strip()
                     if eleccion5 == "seguir a oscar":
