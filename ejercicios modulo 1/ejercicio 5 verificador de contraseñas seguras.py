@@ -1,3 +1,5 @@
+print("\nVerificador de contraseñas")
+
 rango_longitud = (8, 20)
 caracteres_especiales = ("!", "@", "#", "$", "%", "*", ".")
 

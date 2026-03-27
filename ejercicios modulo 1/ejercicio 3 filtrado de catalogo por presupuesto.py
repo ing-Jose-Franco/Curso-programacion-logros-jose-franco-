@@ -1,3 +1,4 @@
+print("Filtrado de catalogo")
 
 catalogo = [
     ("Teclado", 25.50),

@@ -1,3 +1,5 @@
+print("Creador de nombres de usuario")
+
 nombres_prohibidos= ("admin", "root", "boss", "staff", "security")
 
 nombres_rechazados= []
