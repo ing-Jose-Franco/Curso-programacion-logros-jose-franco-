@@ -1,6 +1,6 @@
 print("\nCarrito de compras")
 
-opciones_validas = ("1", "2", "3", "4", "5", "6")
+opciones_validas = ("1", "2", "3", "4", "5")
 cesta = []
 continuar = True
 producto= []
