@@ -1,4 +1,4 @@
-print("\nCajero Automatico")
+print("\nCarrito de compras")
 
 opciones_validas = ("1", "2", "3", "4", "5", "6")
 cesta = []
