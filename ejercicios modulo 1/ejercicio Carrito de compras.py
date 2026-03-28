@@ -29,11 +29,14 @@ while continuar:
          print("="*30)
          producto_nuevo=input(f"\nNombre del producto: ")
          while True:
-            precio_nuevo=float(input(f"\nPrecio del producto: "))
-            if precio_nuevo > 0:
+            try:
+             precio_nuevo=float(input(f"\nPrecio del producto: "))
+             if precio_nuevo > 0:
                  break
-            else:
+             else:
                  print("¡EL MONTO NO PUEDE SER '0' O MENOR")
+            except ValueError:
+             print("\n¡ENTRADA NO VÁLIDA! POR FAVOR, INGRESA UN NÚMERO VÁLIDO.")
 
          producto.append(producto_nuevo)
          precio.append(precio_nuevo)
@@ -85,3 +88,20 @@ while continuar:
             del precio[eliminar - 1]
             print("\nProducto eliminado exitosamente.")
             input("\nPresiona Enter para continuar...")
+        elif opcion == "4":
+         print("\n" + "="*30)
+         print("   🛒 CALCULAR total 🛒")
+         print("="*30)
+         total= 0
+         if not producto:
+          print("\nNo tienes nada en tu cesta para calcular el total.")
+          input("\nPresiona Enter para continuar...")
+
+         else:
+            for i in range(len(precio)):
+             total += precio[i]
+            print(f"\nEl total de tu cesta es: {total}$")
+            input("\nPresiona Enter para continuar...")
+        elif opcion == "5":
+         print("\n¡Gracias por usar nuestro servicio! ¡Hasta luego!")
+         continuar = False
