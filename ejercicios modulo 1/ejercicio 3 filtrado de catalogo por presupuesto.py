@@ -18,6 +18,6 @@ for producto, precio in catalogo:
 print("\nResultados")
 
 if productos_comprables:
-    print(f"Con {presupuesto}€ puedes comprar: {', '.join(productos_comprables)}")
+    print(f"Con {presupuesto}bs puedes comprar: {', '.join(productos_comprables)}")
 else:
     print("Lo siento, nada en el catálogo se ajusta a tu presupuesto.")
