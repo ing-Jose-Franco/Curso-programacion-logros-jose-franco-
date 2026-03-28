@@ -6,7 +6,7 @@ continuar = True
 producto= []
 precio= []
 
-print("\nBIENVENIDO AL CAJERO AUTOMÁTICO")
+print("\nBIENVENIDO AL CARRITO DE COMPRAS")
 
 while continuar:
     print("\n" + "="*30)
