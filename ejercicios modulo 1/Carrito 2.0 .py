@@ -41,13 +41,13 @@ while continuar:
                  for i in range(len(producto)):
                   if i == indice:
                    entrada= [producto[i], precio[i]]
-                 cesta.append(entrada)
-                 print(f"\n{producto[i]} ha sido agregado a tu cesta.")
+                   cesta.append(entrada)
+                   print(f"\n{producto[i]} ha sido agregado a tu cesta.")
                  input("\nPresiona Enter para continuar...")
                  seguir_agregando = False
                  break
-                 
-         
+               else:
+                 print("Número inválido. Intente nuevamente.")
              except ValueError:
                 print("\n¡ENTRADA NO VÁLIDA! POR FAVOR, INGRESA UN NÚMERO VÁLIDO.")
 
@@ -73,29 +73,28 @@ while continuar:
          print("   🛒 ELIMINAR producto 🛒")
          print("="*30)
 
-         if not producto:
+         if not cesta:
           print("\nNo tienes nada en tu cesta para eliminar.")
           input("\nPresiona Enter para continuar...")
 
          else:
-            for i in range(len(producto)):
-             productos = producto[i]
-             precios = precio[i]
+            for i in range(len(cesta)):
+             producto = cesta[i][0]
+             precio = cesta[i][1]
 
-             print(f"{i + 1}. {productos}: {precios}$")
+             print(f"{i + 1}. {producto}: {precio}$")
 
             while True:
              try:
               eliminar = int(input("\nIngrese el número del producto a eliminar: "))
-              if 1 <= eliminar <= len(producto):
+              if 1 <= eliminar <= len(cesta):
                break
               else:
                print("Número inválido. Intente nuevamente.")
              except ValueError:
               print("Entrada no válida. Por favor, ingrese un número.")
 
-            del producto[eliminar - 1]
-            del precio[eliminar - 1]
+            del cesta[eliminar - 1]
             print("\nProducto eliminado exitosamente.")
             input("\nPresiona Enter para continuar...")
         elif opcion == "4":
@@ -103,13 +102,13 @@ while continuar:
          print("   🛒 CALCULAR total 🛒")
          print("="*30)
          total= 0
-         if not producto:
+         if not cesta:
           print("\nNo tienes nada en tu cesta para calcular el total.")
           input("\nPresiona Enter para continuar...")
 
          else:
-            for i in range(len(precio)):
-             total += precio[i]
+            for i in range(len(cesta)):
+             total += cesta[i][1]
             print(f"\nEl total de tu cesta es: {total}$")
             input("\nPresiona Enter para continuar...")
         elif opcion == "5":
