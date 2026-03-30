@@ -1,8 +1,8 @@
-notas=()
+notas=[]
 
 while True:
-    entrada= input("Coloque la nota del alumno o escriba FIN para terminar: ").lower
-    if entrada == "fin":
+    entrada= input("Coloque la nota del alumno o escriba FIN para terminar: ")
+    if entrada.lower() == "fin":
         break
         
     try:
