@@ -7,12 +7,12 @@ eleccion1 = input("\n¿Qué decides hacer? [GOLPEAR LA REJILLA], [ESPERAR] o [ES
 if eleccion1 == "golpear la rejilla":
         print("\nGolpeas la rejilla con los vestijios de fuerza que todavia te quedan, ¡FUNCIONA! la reja a caido y eres libre, huyes rapidamente pero hay dos caminos,\na tu derecha escuchaste pisadas cercanas y sonidos de sollozos, a tu izquierda escuchaste un rugido al final del camino")
  
-        eleccion2 = input("\n¿Prefieres ir por la [DERECHA] o por la [IZQUIERDA]? ").lower().strip()
+        eleccion2 = input("\n¿Prefieres ir por la [DERECHA] o por la [IZQUIERDA]: ").lower().strip()
         
         if eleccion2 == "derecha":
             print("\nCaminas entre pasillos oscuros y escuchas una voz al final del pasillo, parece ser un caballero agonizando")
             
-            eleccion3 = input("¿Que deseas hacer? [HABLAR], [ATACARLE] o [ROBARLE]: ").lower().strip()
+            eleccion3 = input("\n¿Que deseas hacer? [HABLAR], [ATACARLE] o [ROBARLE]: ").lower().strip()
             
             if eleccion3 == "hablar":
                 print("\nEL CABALLERO:'(Nota que eres cosciente)Por los santos de Lordran, pensaba que eras otro No-Muerto mas en busca de devorarme, lamento la confusion\nMe llamo Oscar De Astora, desperte aqui tambien por alguna razon, trate de buscar alguien desde los techos del recinto pero solo vi celdas vacias\nahora estoy mal herido y al borde de la muerte por la cantidad de No-Muertos con los que combati antes de estar aqui\nse ve que eres fuerte, toma mi armadura, mi armas, mis pociones y esta llave, es para escapar de este recinto, pero ten cuidado\nantes de salir te encontraras con el jefe del recinto, solo lo vi de lejos pero parece ser muy fuerte, te lo encomiendo'")
@@ -31,15 +31,15 @@ if eleccion1 == "golpear la rejilla":
                     if eleccion5 == "usar pocion":
                         print("\n¡FUNCIONA! Te sientes revitalizado y con tus fuerzas devuelta, la bestia viene corriendo sin su mazo en tu direccion, te engaña con un golpe falso\n y logra encajarte un golpe que pudo ser letal, pero parece que la bestia se canso luego de ese golpe")
                         
-                        eleccion6 = input("¿Que haras? ¿[ATACAR CABEZA] o [ATACAR PECHO]?: ").lower().strip()
+                        eleccion6 = input("\n¿Que haras? ¿[ATACAR CABEZA] o [ATACAR PECHO]?: ").lower().strip()
                         if eleccion6 == "atacar cabeza":
                             print("\nFINAL: Le cortas la cabeza a la bestia, su cuerpo cae sin vida y la victoria es tuya ¡Eres libre!")
                         elif eleccion6 == "atacar pecho":
                             print("\nFINAL: ¡HAS MUERTO! Le atraviezas el pecho a la bestia, ella ruge de dolor y te da un golpe con las ultimas fuerzas que le quedan, caes en el piso inconsciente y sin fuerzas para respirar")
                         else:
-                            print("¡HAS MUERTO! Parece que te quedaste en shock y la bestia lo noto, recupero su aliento y corrio hacia ti, te asesto un golpe con todas sus fuerzas, volaste y quedaste como una pintura rupestre en el techo")
+                            print("\n¡HAS MUERTO! Parece que te quedaste en shock y la bestia lo noto, recupero su aliento y corrio hacia ti, te asesto un golpe con todas sus fuerzas, volaste y quedaste como una pintura rupestre en el techo")
                     else:
-                        print("¡HAS MUERTO! La bestia ahora que no puede usar su mazo se volvio mas precavida, decidio correr y engañarte con un golpe falso para luego darte uno de verdad, no pudiste resistir el impacto.")
+                        print("\n¡HAS MUERTO! La bestia ahora que no puede usar su mazo se volvio mas precavida, decidio correr y engañarte con un golpe falso para luego darte uno de verdad, no pudiste resistir el impacto.")
                 else:
                     print("\n¡HAS MUERTO! La bestia ataca al instante con su mazo mientras tu tratas de atacarle, su fuerza es descomunal, terminas despedazado por su golpe")
             else:
@@ -48,7 +48,7 @@ if eleccion1 == "golpear la rejilla":
         elif eleccion2 == "izquierda":
             print("\nCaminas por unos pasillos totalmente a ciegas y ves una luz atraves de una puerta")
             
-            eleccion3 = input("¿Qué haces? [PASAR], [VOLVER] o [INVESTIGAR]: ").lower().strip()
+            eleccion3 = input("\n¿Qué haces? [PASAR], [VOLVER] o [INVESTIGAR]: ").lower().strip()
             if eleccion3 == "pasar":
                 print("\nAtraviesas la puerta y la cierras detras de ti, pero ahora estas en una habitacion gigantesca con cadaveres de guerreros alrededor, hay una puerta al final que parece ser la salida")
                 
@@ -56,16 +56,16 @@ if eleccion1 == "golpear la rejilla":
                 if eleccion4 == "buscar arma":
                     print("\nEntre las armas destruidas de los cadaveres encuentras una [ESPADA CORTA], en el instante que haces ruido al recogerla se escucha un estruendo en el camino hacia la puerta\nUna bestia con forma de demonio y un mazo gigante cayo desde el techo, te esta mirando fijamente.")
                     
-                    eleccion5 = input("¿Que haces? [HABLARLE A LA BESTIA] o [ESPERAR]: ").lower().strip()
+                    eleccion5 = input("\n¿Que haces? [HABLARLE A LA BESTIA] o [ESPERAR]: ").lower().strip()
                     if eleccion5 == "esperar":
                         
-                        eleccion6 = input("\nLa bestia corre en tu direccion listo para asestarte un golpe devastador. ¿Que haces? [ESQUIVAR] [RESISTIR]").lower().strip()
+                        eleccion6 = input("\nLa bestia corre en tu direccion listo para asestarte un golpe devastador. \n\n¿Que haces? [ESQUIVAR] [RESISTIR]: ").lower().strip()
                         if eleccion6 == "esquivar":
                             print("\nFINAL:¡HAS MUERTO! Logras esquivar el golpe de la bestia por milimetros, atacas con tu [ESPADA CORTA], pero la espada no es lo suficiente como para hacerle daño, la bestia te toma por tus brazos y te estrella contra el piso.")
                         else:
-                            print("¡HAS MUERTO! Tratas de resistir el golpe pero su fuerza es tan descomunal que sientes como parte todos tus huesos con el mazo, vuelas como una pluma")
+                            print("\n¡HAS MUERTO! Tratas de resistir el golpe pero su fuerza es tan descomunal que sientes como parte todos tus huesos con el mazo, vuelas como una pluma")
                     else:
-                        print("¡HAS MUERTO! Decidiste tratar de comunicarte con la bestia, parece no entender nada de lo que le dices asi que corre en tu direccion y de un golpe te hace atravesar la pared detras de ti")
+                        print("\n¡HAS MUERTO! Decidiste tratar de comunicarte con la bestia, parece no entender nada de lo que le dices asi que corre en tu direccion y de un golpe te hace atravesar la pared detras de ti")
                 else:
                     print("\n¡HAS MUERTO! Te acercas a la puerta y notas que esta bloqueada, de la nada sientes que algo gigantesco cayo detras de ti, no te da tiempo a voltear cuando fuiste despedazado por un golpe descomunal")
             elif eleccion3 == "investigar":
@@ -85,23 +85,23 @@ elif eleccion1 == "esperar":
             if eleccion3 == "escapar juntos":
                 print("\nOscar: Buena eleccion mi decrepito amigo, salgamos de aqui.\n\nSalen de tu celda mientras atraviesan pasillos oscuros siguiendo una tenue luz. \n\nTu solo sigues a Oscar")
                 print("\nLlegan a una sala gigantesca con una puerta al final.\n\nOscar: Esa es la puerta para salir de aqui, yo tengo la llave pero antes de llegar a esa puerta hay que enfrentarnos a eso.\n\nTu: ¿A que? \n\n ¡PUM! miras a enfrente y vez a una bestia con forma de demonio y un mazo gigante en sus manos\n\nOscar: Esa cosa...El es el Carcelero.")
-                eleccion4 = input("\n¿Que haces? [ENCONTRAR ARMA] o [SEGUIR A OSCAR]").lower().strip()
+                eleccion4 = input("\n¿Que haces? [ENCONTRAR ARMA] o [SEGUIR A OSCAR]: ").lower().strip()
                 if eleccion4 == "encontrar arma":
                     print("\nEncuentras una [ESPADA CORTA] entre los cadaveres que habian en la sala, Oscar se lanza en contra de la bestia")
                     
-                    eleccion5 = input("¿Que haces? [SEGUIR A OSCAR] o [SEGUIR BUSCANDO]").lower().strip()
+                    eleccion5 = input("\n¿Que haces? [SEGUIR A OSCAR] o [SEGUIR BUSCANDO]: ").lower().strip()
                     if eleccion5 == "seguir a oscar":
                         print("\nSigues a Oscar a la pelea, la bestia ve que son dos enemigos asi que tiene su atencion dividida, ataca al enemigo mas cercano.\n\n La pelea se alarga, todos estan cansados, estas cara a cara con la bestia mientras que Oscar esta apunto de atacarla por la espalda\nPero la bestia lo noto y esta mirando hacia atras apunto de voltearse para atacarle")
                 
-                        eleccion6 = input("¿Que haces? [AVISARLE] o [LANZAR TU ESPADA]: ").lower().strip()
+                        eleccion6 = input("\n¿Que haces? [AVISARLE] o [LANZAR TU ESPADA]: ").lower().strip()
                         if eleccion6 == "lanzar tu espada":
                             print("\nFINAL: Lanzas la espada directo a los ojos de la bestia...\n\n ¡DAS EN EL BLANCO! \n\nLa Bestia grita de dolor y queda totalmente ciega de un ojo, Oscar ataca desde su punto ciego y cercena su cabeza de su torso.\n\n ¡VICTORIA! La bestia cae muerta en el suelo, Oscar y tu han escapado.")
                         else:
-                            print("¡HAS MUERTO! Gritas con todas tus fuerzas para avisarle a Oscar las intenciones de la bestia, pero por el ruido la bestia posa toda su atencion en ti y te aplasta con su mazo apenas empiezas a gritar")
+                            print("\n¡HAS MUERTO! Gritas con todas tus fuerzas para avisarle a Oscar las intenciones de la bestia, pero por el ruido la bestia posa toda su atencion en ti y te aplasta con su mazo apenas empiezas a gritar")
                     else:
-                        print("¡HAS MUERTO! Sigues buscando otra arma o algun equipamiento, alzas la mirada por un momento y solo ves a oscar desangrandose en el piso, la bestia viene hacia ti.")
+                        print("\n¡HAS MUERTO! Sigues buscando otra arma o algun equipamiento, alzas la mirada por un momento y solo ves a oscar desangrandose en el piso, la bestia viene hacia ti.")
                 else:
-                    print("¡HAS MUERTO! Tratas de seguir a Oscar sin un arma, la bestia nota que no tienes un arma asi que enfoca toda su atencion en Oscar\nOscar no es rival para la bestia, sale volando de un golpe y el siguiente fuiste tu")
+                    print("\n¡HAS MUERTO! Tratas de seguir a Oscar sin un arma, la bestia nota que no tienes un arma asi que enfoca toda su atencion en Oscar\nOscar no es rival para la bestia, sale volando de un golpe y el siguiente fuiste tu")
             else:
                 print("\n¡HAS MUERTO! Tratas de robarle Oscar mientras esta distraido pero se da cuenta\n\nOSCAR: Parece que eres cosciente pero no inteligente.\n\nOscar te atraviesa con su espada y se va de tu celda")
         else:
