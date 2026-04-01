@@ -1,0 +1,9 @@
+.hero-banner {
+    background-image: linear-gradient(to bottom, #2c3e50, #3498db);
+    padding: 80px;
+    border-radius: 10px;
+}
+
+.hero-banner h1 {
+    color: #ffffff;
+}

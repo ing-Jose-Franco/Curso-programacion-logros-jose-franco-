@@ -1,0 +1,12 @@
+.tarjeta-producto{
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
