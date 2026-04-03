@@ -1,0 +1,9 @@
+.lista-compras {
+    list-style-type: square; /* O usa url('ruta/imagen.png') */
+    margin-left: 40px;
+    padding: 10px;
+}
+.lista-compras li {
+    margin-bottom: 8px;
+    font-weight: bold;
+}

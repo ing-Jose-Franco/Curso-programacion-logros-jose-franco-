@@ -1,0 +1,4 @@
+.menu-link:link { color: blue; text-decoration: none; }
+.menu-link:visited { color: purple; }
+.menu-link:hover { color: red; font-weight: bold; }
+.menu-link:active { color: orange; }

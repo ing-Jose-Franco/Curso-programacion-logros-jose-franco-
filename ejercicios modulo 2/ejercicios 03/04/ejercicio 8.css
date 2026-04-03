@@ -1,0 +1,12 @@
+.perfil {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .perfil {
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+}
