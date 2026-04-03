@@ -1,0 +1,43 @@
+/* 2. Variables CSS */
+:root {
+    --color-principal: #333;
+    --fuente: sans-serif;
+}
+
+/* 3. Modelo de Caja (Padding y Margin) */
+.tarjeta-perfil {
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    font-family: var(--fuente);
+    color: var(--color-principal);
+
+    /* 4. Flexbox: Centrar contenido verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-perfil img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* 4. Flexbox: Alinear lista horizontalmente */
+.tarjeta-perfil ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+/* 5. Responsividad */
+.tarjeta-perfil {
+    width: 90%; /* Móviles */
+}
+
+@media (min-width: 600px) {
+    .tarjeta-perfil {
+        width: 350px; /* Ancho fijo en pantallas grandes */
+    }
+}
