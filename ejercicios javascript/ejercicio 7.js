@@ -1,6 +1,7 @@
-i = 0;
+let i = 10;
 
-while(i <= 10) {
-    case 1:
-        console.log("Esto se repetirá 5 veces");
+while (i >= 1) {
+    console.log(i);
+    i--;
 }
+console.log("¡Despegue!");
