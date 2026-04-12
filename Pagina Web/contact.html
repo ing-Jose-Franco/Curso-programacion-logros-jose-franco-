@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-    rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css">
-    <title>My Website</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <nav class="nav">
+    <!--=============== REMIXICON ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--=============== NAVBAR ===============-->
+   <nav class="nav">
         <div class="nav-menu">
           <ul class="nav-list grid">
             <li class="nav-item">
                 <a href="index.html" class="nav-link">
                   <i class="ri-home-4-line nav-icon"></i>
-                  <h3 class="nav-name">Home</h3>
+                  <h3 class="nav-name">Inicio</h3>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a href="about.html" class="nav-link">
                   <i class="ri-user-3-line nav-icon"></i>
-                  <h3 class="nav-name">About</h3>
+                  <h3 class="nav-name">Info</h3>
                 </a>
             </li>
 
@@ -39,7 +44,7 @@
             <li class="nav-item">
                 <a href="contact.html" class="nav-link active-link">
                   <i class="ri-mail-line nav-icon"></i>
-                  <h3 class="nav-name">Contact</h3>
+                  <h3 class="nav-name">Contacto</h3>
                 </a>
             </li>
           </ul>
@@ -51,16 +56,118 @@
            <i class="ri-menu-line"></i>
         </div>
     </nav>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+    <!--=============== CONTACT ===============-->
+      <section class="contact section">
+        <h2 class="section-title">Contacta<span>Me</span></h2>
 
+        <div class="contact-container container grid">
+          <div class="contact-content grid">
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-map-2-line"></i>
+              </span>
 
+              <div>
+                <h3 class="contact-title">Direccion</h3>
+                <p class="contact-data">Venezuela, Zulia, San Francisco</p>
+              </div>
+            </div>
 
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-user-3-line"></i>
+              </span>
 
+              <div>
+                <h3 class="contact-title">Freelance</h3>
+                <p class="contact-data">Disponible</p>
+              </div>
+            </div>
 
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-mail-line"></i>
+              </span>
 
+              <div>
+                <h3 class="contact-title">Correo</h3>
+                <p class="contact-data">josefranber2609@gmail.com</p>
+              </div>
+            </div>
 
+            <div class="contact-card">
+              <span class="contact-icon">
+                <i class="ri-phone-line"></i>
+              </span>
 
+              <div>
+                <h3 class="contact-title">Telefono</h3>
+                <p class="contact-data">+58 412-3832266</p>
+              </div>
+            </div>
+          </div>
 
+          <form action="" class="contact-form grid" id="contact-form">
+            <div class="contact-group grid">
+              <div class="contact-form-div">
+                <label for="" class="contact-form-label">
+                  Tu Nombre Completo <b>*</b>
+                </label>
 
+                <input type="text" class="contact-form-input" name="name" id="contact-name"  />
+              </div>
+
+              <div class="contact-form-div">
+                <label for="" class="contact-form-label">
+                  Tu Correo Electronico <b>*</b>
+                </label>
+
+                <input type="email" class="contact-form-input" name="email"  id="contact-email" />
+              </div>
+            </div>
+
+            <div class="contact-form-div">
+                <label for="" class="contact-form-label">
+                  Tu Asunto <b>*</b>
+                </label>
+                
+                <input type="text" class="contact-form-input" name="subject" id="contact-subject" />
+              </div>
+
+              <div class="contact-form-div">
+                <label for="" class="contact-form-label">
+                  Tu Mensaje <b>*</b>
+                </label>
+                
+                <textarea class="contact-form-input contact-form-area" name="message" id="contact-message"></textarea>
+              </div>
+
+              <button class="button contact-button">
+                Enviar Mensaje
+                <span class="button-icon">
+                  <i class="ri-send-plane-2-line"></i>
+                </span>
+              </button>
+
+              <p class="contact-message" id="message"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+
+    <!--=============== CONTACT JS ===============-->
     <script src="contact.js"></script>
-</body>
+  </body>
 </html>
