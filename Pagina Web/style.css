@@ -647,6 +647,11 @@ img{
     padding: 1rem;
     transform: translateX(-100%);
     z-index: 100;
+    transition: transform 0.3s;
+}
+
+.show-switcher{
+    transform: translateX(0);
 }
 
 .style-switcher,
@@ -674,6 +679,7 @@ img{
     display: grid;
     place-items: center;
     border: 1px solid hsl(var(--hue), 4%, 91%);
+    transition: left 0.3s;
 }
 
 .switcher-toggler{
@@ -682,6 +688,10 @@ img{
 
 .theme-toggler{
     bottom: 12%;
+}
+
+.show-switcher :is(.switcher-toggler, .theme-toggler){
+    left: 100%;
 }
 
 .switcher-title{
